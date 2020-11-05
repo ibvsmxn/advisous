@@ -30,6 +30,15 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </section>
 
+<section class="blocks">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 block">What do we do?</div>
+            <div class="col-6 block">Overiew</div>
+        </div>
+    </div>
+</section>
+
 
 <div class="wrapper" id="full-width-page-wrapper">
 
