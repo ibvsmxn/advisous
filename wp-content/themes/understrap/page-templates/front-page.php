@@ -19,11 +19,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>
 
 <section class="banner">
-    <div class="jumbotron jumbotron-fluid" style="background-image: url('wp-content/themes/understrap/images/city-5041143.jpg')">
+    <div class="jumbotron jumbotron-fluid" style="background-image: url('wp-content/themes/understrap/images/ryan-tang-HrBNsh-wzN8-unsplash.jpg')">
         <div class="overlay">
             <div class="container">
-                <h1 class="display-4">We are Project: Advisous.</h1>
-                <h2 class="lead">we are an HR Consultancy firm.</h2>
+                <h1 class="display-4">We're <span>Project: Advisous</span>.</h1>
+                <h2 class="lead">we're a forward-thinking HR Consultancy firm made for the people of the 21st Century.</h2>
                 <a class="cta" href="#">Learn More</a>
             </div>
         </div>
@@ -33,7 +33,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <section class="blocks">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6 block">What do we do?</div>
+            <div class="col-6 block"><h2>What do we do?</h2
+                ><p>We provide HR services to those who need it most.</p></div>
             <div class="col-6 block">Overiew</div>
         </div>
     </div>
