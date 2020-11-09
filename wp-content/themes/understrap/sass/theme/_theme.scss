@@ -1,0 +1,341 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+$green: #27f693;
+$blue: #158f99;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: $green;
+
+  header {
+    .navbar-brand {
+      position: fixed;
+      width: 175px;
+      margin: 25px 45px;
+      z-index: 5;
+    }
+  }
+
+  button.navbar-toggler {
+    width: auto;
+    position: fixed;
+    right: 15px;
+    z-index: 5;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      span.burger-slice:nth-of-type(1) {
+        transform: rotate(45deg);
+      }
+      span.burger-slice:nth-of-type(2) {
+        background: transparent;
+      }
+      span.burger-slice:nth-of-type(3) {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &.collapsed {
+      span.burger-slice {
+        background-color: white;
+      }
+    }
+
+    span.burger-slice {
+      display: block;
+      width: 40px;
+      height: 5px;
+      margin: 7.5px 0;
+      background-color: white;
+      border-radius: 3px;
+      transition: 0.4s all ease;
+      transition-delay: 0.5s;
+    }
+  }
+
+  nav.navbar {
+    height: 95px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    //border-top: 5px solid white;
+    border-bottom: 1px solid transparent;
+    transition: .3s all ease;
+
+    .navbar-nav {
+      flex-direction: column;
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      background: $green;
+      -webkit-backdrop-filter: blur(0px);
+      backdrop-filter: blur(0px);
+      z-index: -1;
+      height: 100%;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      padding: 50px;
+      transition: 0.5s all ease;
+
+      &.show {
+        right: 0;
+        transition: 0.5s all ease;
+
+        @include media-breakpoint-down(md) {
+          display: flex;
+        }
+
+        .nav-link {
+          font-size: 1.5em;
+          font-weight: 600;
+          color: black;
+          transition: 1.5s all ease;
+
+          @include media-breakpoint-up(md) {
+            font-size: 3em;
+          }
+
+          &::after {
+            display: inline-flex;
+            content: '';
+            background: black;
+            width: 50px;
+            height: 5px;
+            position: absolute;
+            margin-top: 35px;
+            right: -50px;
+            transition: 0.5s all ease;
+
+          }
+
+          &:hover {
+            margin-right: 25px;
+            color: white;
+            transition: 0.5s all ease;
+
+            &::after {
+              right: 0;
+              background: white;
+              transition: 0.5s all ease;
+            }
+          }
+        }
+      }
+    }
+
+    a.navbar-brand {
+      max-width: 150px;
+    }
+
+    a {
+      transition: 0.3s all ease;
+    }
+
+    &.scrolled {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+      transition: 0.3s all ease;
+    }
+  }
+
+  p {
+    color: #4e4e4e;
+    font-weight: lighter;
+    line-height: 32px;
+  }
+
+  section {
+    &.banner {
+      border-top: 1px solid #191919;
+
+      @keyframes introSlide {
+        0% {background-position: 0}
+        100% {background-position: 0 66%}
+      }
+
+      .jumbotron {
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        background-position: 0%;
+        animation: introSlide 5s forwards;
+
+        .overlay {
+          padding: 300px 0;
+          background: rgb(21,143,153);
+          background: linear-gradient(138deg, rgba(21,143,153,1) 0%, rgba(21,143,153,0.15) 100%);
+        }
+
+        h1 {
+          font-size: 6em;
+          font-weight: bold;
+          margin-bottom: 0.5em;
+          text-shadow: 0 0 50px #1b5c60;
+
+          span {
+            color: $green;
+          }
+        }
+
+        h2.lead {
+          font-size: 2em;
+          font-weight: 500;
+          line-height: 2em;
+          width: 66%;
+          border-bottom: 4px solid white;
+          display: inline;
+        }
+
+        a.cta {
+          display: table;
+          font-size: 25px;
+          text-transform: uppercase;
+          padding: 20px 50px;
+          border: 2px solid #27f693;
+          color: #27f693;
+          margin-top: 50px;
+          transition: .3s all ease;
+          border-radius: 48px;
+          font-weight: lighter;
+          letter-spacing: 4px;
+
+          &:hover {
+            text-decoration: none;
+            background: $green;
+            color: black;
+            transition: 0.3s all ease;
+          }
+        }
+      }
+
+    }
+  }
+
+  &.page-template-front-page {
+    .block {
+      text-align: left;
+      height: 30vw;
+      background: $blue;
+      color: white;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: 2em;
+      }
+    }
+  }
+
+  &.page-template-content-page {
+    background: white;
+
+    #full-width-page-wrapper {
+      padding: 0;
+    }
+
+    h2 {
+      color: #46a0a9;
+    }
+
+    nav {
+      background: transparent;
+
+      &.scrolled {
+        background-color: rgba(21,143,153,0.75);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
+    }
+
+    .jumbotron {
+      padding: 0;
+      background-color: $blue;
+      color: white;
+      background-position: center;
+      background-size: cover;
+
+      .overlay {
+        padding: 15em 0;
+        background: rgb(21,143,153);
+        background: linear-gradient(138deg, rgba(21,143,153,1) 0%, rgba(21,143,153,0.15) 100%);
+      }
+
+      a {
+        color: white;
+        border-bottom: 2px solid white;
+        text-decoration: none;
+      }
+    }
+
+    .entry-content {
+      line-height: 1.75em;
+    }
+
+    form {
+      textarea,
+      input {
+        border: none !important;
+        border-bottom: 2px solid black !important;
+        border-radius: 0 !important;
+
+        &[type="submit"] {
+          border: none !important;
+          color: white;
+          background: $blue;
+        }
+
+        &:focus {
+          border-color: $blue !important;
+        }
+      }
+
+      .wpcf7-response-output {
+        border: none;
+        background: #bb0000;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  #wrapper-footer {
+    background: black;
+    color: white;
+
+    img {
+      max-width: 200px;
+    }
+
+    #footer-menu {
+      margin-top: 20px;
+
+      li {
+        display: inline-flex;
+        a {
+          font-size: 16px;
+          color: white;
+          text-decoration: none;
+          border-bottom: 2px solid white;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+
+}
