@@ -31,11 +31,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 </section>
 
 <section class="blocks">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-6 block"><h2>What do we do?</h2
-                ><p>We provide HR services to those who need it most.</p></div>
-            <div class="col-6 block">Overiew</div>
+    <div class="row no-gutters">
+        <div class="col-12">
+            <div class="block">
+                <h2>What do we do?</h2>
+            </div>
         </div>
     </div>
 </section>
