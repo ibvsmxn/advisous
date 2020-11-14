@@ -22,20 +22,41 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="jumbotron jumbotron-fluid" style="background-image: url('wp-content/themes/understrap/images/ryan-tang-HrBNsh-wzN8-unsplash.jpg')">
         <div class="overlay">
             <div class="container">
-                <h1 class="display-4">We're <span>Project: Advisous</span>.</h1>
-                <h2 class="lead">we're a forward-thinking HR Consultancy firm made for the people of the 21st Century.</h2>
-                <a class="cta" href="#">Learn More</a>
+                <div class="jumbo-content">
+                    <h1 class="display-4">We're <span>Project: Advisous</span>.</h1>
+                    <h2 class="lead">we're a forward-thinking HR Consultancy firm made for the people of the 21st Century.</h2>
+                    <a class="cta prominent" href="#">Get in touch</a>
+                    <a class="cta" href="#">Learn More</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <section class="blocks">
-    <div class="row no-gutters">
-        <div class="col-12">
-            <div class="block">
-                <h2>What do we do?</h2>
+    <div class="row no-gutters" style="background: rgb(21,143,153); background: linear-gradient(112deg, rgb(21 116 153) 33%, rgb(27 27 27) 33%);;">
+        <div class="col-6 block">
+            <div class="block-content">
+                <h2>What we do</h2>
             </div>
+
+        </div>
+        <div class="col-6 block">
+            <div class="block-content">
+                <h3>We provide HR consultants to your organisation that <u>delivers solid results</u>.</h3>
+                <h4>Leaving you free to focus on your endless array of Zoom meetings.</h4>
+                <a href="#" class="cta btn btn-primary">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters" style="background: rgb(40,246,147); background: linear-gradient(-72deg, rgb(40 246 147) 50%, rgb(27 27 27) 50%);">
+        <div class="col-6 block">
+            <div class="block-content"></div>
+            <h3>We provide HR consultants for your organisation</h3>
+        </div>
+        <div class="col-6 block">
+            <div class="block-content"></div>
+            <h2>What do we do?</h2>
         </div>
     </div>
 </section>
