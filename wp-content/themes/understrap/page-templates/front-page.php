@@ -49,14 +49,66 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
-    <div class="row no-gutters" style="background: rgb(40,246,147); background: linear-gradient(-72deg, rgb(40 246 147) 50%, rgb(27 27 27) 50%);">
-        <div class="col-6 block">
-            <div class="block-content"></div>
-            <h3>We provide HR consultants for your organisation</h3>
+    <div class="row no-gutters" style="background: #1b1b1b;">
+        <div class="container highlights-block">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Culture</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">HR</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Talent</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Management Development</h5>
+                </div>
+            </div>
         </div>
-        <div class="col-6 block">
+
+    </div>
+    <div class="row no-gutters" style="background: rgb(40,246,147); background: linear-gradient(-72deg, rgb(160 44 76) 50%, rgb(27 27 27) 50%);">
+        <div class="col-6 offset-md-1 block">
+            <div class="block-content">
+                <div class="block-content">
+                    <h3>We provide HR consultants to your organisation that <u>delivers solid results</u>.</h3>
+                    <h4>Leaving you free to focus on your endless array of Zoom meetings.</h4>
+                    <a href="#" class="cta btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 block">
             <div class="block-content"></div>
-            <h2>What do we do?</h2>
+            <h2 >What do we do?</h2>
+        </div>
+    </div>
+    <div class="row no-gutters" style="background: rgb(160 45 77);">
+        <div class="col-12 block">
+            <div class="block-content">
+                <div class="block-content">
+                    <h3>We provide HR consultants to your organisation that <u>delivers solid results</u>.</h3>
+                    <h4>Leaving you free to focus on your endless array of Zoom meetings.</h4>
+                    <a href="#" class="cta btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters" style="background: url('wp-content/themes/understrap/images/kid-circus-HyVXOAxah10-unsplash.jpg');background-position: 0 15%; background-size: 185%; background-attachment: fixed">
+        <div class="col-12 block">
+            <div class="block-content">
+                <div class="block-content">
+                    <h3>We provide HR consultants to your organisation that <u>delivers solid results</u>.</h3>
+                    <h4>Leaving you free to focus on your endless array of Zoom meetings.</h4>
+                    <a href="#" class="cta btn btn-primary">Read more</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

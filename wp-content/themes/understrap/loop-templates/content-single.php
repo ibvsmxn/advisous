@@ -41,7 +41,13 @@ defined( 'ABSPATH' ) || exit;
 
     <div class="wrapper container">
 
-	<div class="entry-content col-12 col-md-8">
+        <div class="introduction col-12 col-md-10 offset-md-1">
+            <?php the_field("introduction") ?>
+        </div>
+
+
+
+	<div class="entry-content col-12 col-md-8 offset-md-2">
 
 		<?php the_content(); ?>
 

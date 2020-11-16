@@ -2,6 +2,7 @@
 
 $green: #27f693;
 $blue: #158f99;
+$black: #1c1c1c;
 
 .btn {
   &.btn-primary {
@@ -167,7 +168,7 @@ body {
     &.scrolled {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,0.5);
+      //border-bottom: 2px solid rgba(255,255,255,0.5);
       transition: 0.3s all ease;
     }
   }
@@ -175,7 +176,6 @@ body {
   p {
     font-family: 'Catamaran', sans-serif;
     color: #4e4e4e;
-    font-weight: lighter;
     line-height: 32px;
   }
 
@@ -261,13 +261,39 @@ body {
 
     &.blocks {
       box-shadow: 0px 0px 50px -25px #000000a6;
+
+      .highlights-block {
+        display: flex;
+        padding: 5em 0;
+
+        .card {
+          background: transparent;
+          border: 2px solid white;
+          border-radius: 10px;
+          //padding: 50px 10px;
+          margin: 15px;
+
+          .card-body {
+            display: flex;
+            align-items: flex-end;
+            justify-content: left;
+            color: #fff;
+            padding-top: 12em;
+
+            .card-title {
+              line-height: 1.5em;
+              margin: 0;
+            }
+          }
+        }
+      }
     }
   }
 
   &.page-template-front-page {
     .block {
       text-align: left;
-      height: 30vw;
+      height: 40vw;
       //background: white;
       color: white;
       font-size: 2em;
@@ -281,14 +307,6 @@ body {
           border-bottom: 2px solid #fff;
           display: inline;
         }
-      }
-
-      &:nth-of-type(odd) {
-        border-top-left-radius: 25px;
-      }
-
-      &:nth-of-type(even) {
-        border-top-right-radius: 25px;
       }
 
       h2 {
@@ -312,7 +330,7 @@ body {
   }
 
   &.page-template-content-page {
-    background: white;
+    background: $black;
 
     #full-width-page-wrapper {
       padding: 0;
@@ -320,6 +338,10 @@ body {
 
     h1 {
       font-size: 3.5em;
+      width: 66%;
+      line-height: 1.5em;
+      text-align: center;
+      margin: 0 auto;
     }
 
     h2 {
@@ -330,7 +352,7 @@ body {
       background: transparent;
 
       &.scrolled {
-        background-color: rgba(21,143,153,0.75);
+        background-color: rgba(29,29,29,0.75);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
       }
@@ -347,7 +369,7 @@ body {
       .overlay {
         padding: 17.5em 0;
         background: rgb(21,143,153);
-        background: linear-gradient(0deg, rgba(21,143,153,1) 0%, rgba(21,143,153,0.15) 100%);
+        background: linear-gradient(0deg, $black 0%, rgba(21,143,153,0.15) 100%);
       }
 
       a {
@@ -358,13 +380,33 @@ body {
     }
 
     article {
-      background: #198f99;
+      background: $black;
+
+      .introduction {
+        font-size: 16px;
+        color: #fff;
+        margin-top: -9em;
+        -moz-column-count: 2;
+        column-count: 2;
+        column-gap: 50px;
+        background: #1d1d1d;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 35px;
+        box-shadow: 0px 0px 50px -21px #1d1d1d;
+
+        p {
+          color: white;
+        }
+      }
 
       .entry-content {
         line-height: 1.75em;
+        padding: 40px 0;
 
         h2 {
           color: white;
+          margin-top: 25px;
         }
 
         p {
@@ -380,7 +422,7 @@ body {
       textarea,
       input {
         border: none !important;
-        border-bottom: 2px solid black !important;
+        border-bottom: 2px solid white !important;
         border-radius: 0 !important;
 
         &[type="submit"] {
@@ -392,6 +434,10 @@ body {
         &:focus {
           border-color: $blue !important;
         }
+      }
+
+      textarea {
+        border: 2px solid white !important;
       }
 
       .wpcf7-response-output {
