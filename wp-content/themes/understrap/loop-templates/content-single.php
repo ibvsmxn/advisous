@@ -39,15 +39,9 @@ defined( 'ABSPATH' ) || exit;
 
 <!--	--><?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
-    <div class="wrapper container">
+    <div class="wrapper">
 
-        <div class="introduction col-12 col-md-10 offset-md-1">
-            <?php the_field("introduction") ?>
-        </div>
-
-
-
-	<div class="entry-content col-12 col-md-8 offset-md-2">
+	<div class="entry-content col-12">
 
 		<?php the_content(); ?>
 

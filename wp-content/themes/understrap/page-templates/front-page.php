@@ -23,10 +23,10 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="overlay">
             <div class="container">
                 <div class="jumbo-content">
-                    <h1 class="display-4">We're <span>Project: Advisous</span>.</h1>
-                    <h2 class="lead">we're a forward-thinking HR Consultancy firm made for the people of the 21st Century.</h2>
+                    <h1 class="display-4">We're <span>Advisous</span>.</h1>
+                    <h2 class="lead">We’re a forward-thinking independent HR advisory firm made for people of the 21st Century.</h2>
                     <a class="cta prominent" href="#">Get in touch</a>
-                    <a class="cta" href="#">Learn More</a>
+                    <a class="cta secondary" href="#">Learn More</a>
                 </div>
             </div>
         </div>

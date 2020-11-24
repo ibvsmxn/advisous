@@ -20,6 +20,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -51,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             the_custom_logo();
         } ?><!-- end custom logo -->
 
-		<nav class="navbar navbar-expand-md navbar-dark">
+		<nav class="navbar navbar-expand-md navbar-dark header-navbar">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">

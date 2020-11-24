@@ -74,17 +74,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             </div>
 
-			<div class="col-md-12">
+        </div>
 
-                <hr
+    </div>
+
+			<div class="col-md-12 footer">
 
 				<footer class="site-footer" id="colophon">
+
+                </footer>
+
+                <div class="container">
 
 					<div class="site-info">
 
                         &copy; <?php echo date("Y"); ?> Advisous, D'André Phillips. All rights reserved.
 
 					</div><!-- .site-info -->
+
+                </div>
 
 				</footer><!-- #colophon -->
 

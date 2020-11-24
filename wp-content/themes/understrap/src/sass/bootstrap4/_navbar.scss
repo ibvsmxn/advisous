@@ -63,18 +63,26 @@
   flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
 
   .nav-link {
     padding-right: 0;
     padding-left: 0;
+    //border-bottom: 2px solid #fff;
+    //line-height: 14px;
+    //margin-bottom: 9px;
   }
 
   .dropdown-menu {
     position: static;
     float: none;
   }
+
+  li {
+    list-style: none;
+  }
 }
+
+
 
 
 // Navbar text

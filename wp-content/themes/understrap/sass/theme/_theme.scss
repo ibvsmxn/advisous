@@ -166,8 +166,7 @@ body {
     }
 
     &.scrolled {
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
+      background: #1d1d1d;
       //border-bottom: 2px solid rgba(255,255,255,0.5);
       transition: 0.3s all ease;
     }
@@ -198,9 +197,12 @@ body {
         animation: introSlide 5s forwards;
 
         .overlay {
-          padding: 300px 0;
           background: rgb(21,143,153);
           background: linear-gradient(138deg,#158f99 0,rgba(60,21,153,0.8) 100%);
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .jumbo-content {
@@ -208,7 +210,7 @@ body {
         }
 
         h1 {
-          font-size: 5em;
+          font-size: 4.5em;
           line-height: 1.25em;
           font-weight: bold;
           margin-bottom: 0.5em;
@@ -220,22 +222,24 @@ body {
         }
 
         h2.lead {
-          font-size: 2em;
+          font-family: Montserrat,sans-serif;
+          padding: 5px 0;
+          font-size: 1.75em;
           font-weight: 500;
           line-height: 2em;
           width: 75%;
-          border-bottom: 4px solid white;
+          border-bottom: 4px solid #fff;
           display: inline;
         }
 
         a.cta {
+          font-family: "Montserrat", sans-serif;
           display: inline-block;
-          font-size: 19px;
+          font-size: 20px;
           text-transform: uppercase;
           padding: 20px 50px;
-          border: 2px solid #27f693;
           color: #27f693;
-          margin-top: 50px;
+          margin-top: 100px;
           margin-right: 20px;
           transition: .3s all ease;
           border-radius: 48px;
@@ -244,8 +248,14 @@ body {
 
           &.prominent {
             font-weight: bold;
-            background: $green;
-            color: black;
+            background: rgb(21,153,97);
+            background: linear-gradient(138deg,#00BCD4 0,#009688 100%);
+            box-shadow: 0px 0px 35px #00BCD4;
+            color: white;
+          }
+
+          &.secondary {
+            border: 1px solid $green;
           }
 
           &:hover {
@@ -334,6 +344,20 @@ body {
 
     #full-width-page-wrapper {
       padding: 0;
+
+      .wp-block-coblocks-column {
+        margin: 0;
+        &:first-of-type {
+          -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+          height: auto;
+          background: #0e0e0e;
+
+          .wp-block-coblocks-column__inner {
+            //padding: 60px;
+          }
+        }
+      }
     }
 
     h1 {
@@ -342,6 +366,28 @@ body {
       line-height: 1.5em;
       text-align: center;
       margin: 0 auto;
+
+       &::before,
+       &::after {
+         content: '';
+         display: block;
+         position: absolute;
+         background:rgba(255,255,255,0.75);
+         width: 3px;
+         height: 200px;
+         left: calc(50% - 2.5px);
+         margin: 0;
+       }
+
+      &::before {
+        top: 5px;
+      }
+
+      &::after {
+        top: 10em;
+      }
+
+
     }
 
     h2 {
@@ -353,8 +399,6 @@ body {
 
       &.scrolled {
         background-color: rgba(29,29,29,0.75);
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
       }
     }
 
@@ -367,7 +411,8 @@ body {
       background-position: bottom;
 
       .overlay {
-        padding: 17.5em 0;
+        padding: 30em 0;
+        padding-top: 20em;
         background: rgb(21,143,153);
         background: linear-gradient(0deg, $black 0%, rgba(21,143,153,0.15) 100%);
       }
@@ -382,24 +427,6 @@ body {
     article {
       background: $black;
 
-      .introduction {
-        font-size: 16px;
-        color: #fff;
-        margin-top: -9em;
-        -moz-column-count: 2;
-        column-count: 2;
-        column-gap: 50px;
-        background: #1d1d1d;
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 35px;
-        box-shadow: 0px 0px 50px -21px #1d1d1d;
-
-        p {
-          color: white;
-        }
-      }
-
       .entry-content {
         line-height: 1.75em;
         padding: 40px 0;
@@ -409,34 +436,83 @@ body {
           margin-top: 25px;
         }
 
+        h5 {
+          color: white;
+          line-height: 40px;
+        }
+
         p {
+          font-size: 1.2em;
           margin-top: 25px;
           color: white;
+          line-height: 40px;
+        }
+
+        .block-content {
+          padding: 50px;
+        }
+
+        .text-block-full {
+          background: rgb(21,153,97);
+          background: linear-gradient(138deg, rgba(21,153,97,1) 0%, rgba(21,129,153,1) 100%);
+          margin: 3em auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            font-family: Montserrat,sans-serif;
+            color: white;
+            font-size: 1.5em;
+            line-height: 2.25em;
+            width: 100%;
+            max-width: 768px;
+            margin: 0;
+            padding: 200px 0;
+            text-align: center;
+          }
         }
       }
     }
 
-
+    [role="form"] {
+      max-width: 100%;
+    }
 
     form {
+      column-count: 2;
+      column-gap: 3em;
+
+      label {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
       textarea,
       input {
+        font-size: 1.5em !important;
+        padding: 15px !important;
+        color: white !important;
+        background: transparent !important;
+        box-shadow: none !important;
         border: none !important;
-        border-bottom: 2px solid white !important;
         border-radius: 0 !important;
+        border-bottom: 2px solid white !important;
 
         &[type="submit"] {
           border: none !important;
-          color: white;
-          background: $blue;
+          background: $green !important;
         }
 
         &:focus {
-          border-color: $blue !important;
+          background-color: transparent;
+          border-color: $green !important;
         }
       }
 
       textarea {
+        margin-top: 15px;
         border: 2px solid white !important;
       }
 
@@ -451,7 +527,8 @@ body {
   }
 
   #wrapper-footer {
-    background: black;
+    background: transparent;
+    border-top: 1px solid rgba(255,255,255,0.125);
     color: white;
 
     img {
@@ -475,7 +552,11 @@ body {
         }
       }
     }
+
+    .footer {
+      padding-top: 25px;
+      border-top: 1px solid rgba(255,255,255,0.125);
+      margin-top: 25px;
+    }
   }
-
-
 }
