@@ -22,6 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
 	<?php wp_head(); ?>
 </head>
 

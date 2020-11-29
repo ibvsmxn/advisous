@@ -34,10 +34,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 </section>
 
 <section class="blocks">
-    <div class="row no-gutters" style="background: rgb(21,143,153); background: linear-gradient(112deg, rgb(21 116 153) 33%, rgb(27 27 27) 33%);;">
+    <div class="row no-gutters" style="background: rgb(21,143,153); background: linear-gradient(22deg, rgb(44 62 139) 33%, rgb(76 37 141) 100%);">
         <div class="col-6 block">
             <div class="block-content">
-                <h2>What we do</h2>
+                <div class="graphic-content">
+                    <h2>What we do</h2>
+                    <img class="graphic back" src="wp-content/themes/understrap/images/jakob-owens-RKhidwWby28-unsplash.jpg">
+                    <img class="graphic fore" src="wp-content/themes/understrap/images/jakob-owens-RKhidwWby28-unsplash.jpg">
+                </div>
             </div>
 
         </div>
@@ -49,32 +53,45 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
+    <div class="row no-gutters" style="background: #dedede;">
+        <div class="col-12 block light text-center">
+            <div class="block-content">
+                <h2 class="align-center">You are...</h2>
+                <br>
+                <a class="btn btn-primary cta" href="#">an employer</a>
+                <a class="btn btn-primary cta" href="#">an employee</a>
+            </div>
+
+        </div>
+    </div>
     <div class="row no-gutters" style="background: #1b1b1b;">
         <div class="container highlights-block">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Culture</h5>
+            <div class="row">
+                <div class="card col-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Culture</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">HR</h5>
+                <div class="card col-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">HR</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Talent</h5>
+                <div class="card col-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Talent</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Management Development</h5>
+                <div class="card col-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Management Development</h5>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="row no-gutters" style="background: rgb(40,246,147); background: linear-gradient(-72deg, rgb(160 44 76) 50%, rgb(27 27 27) 50%);">
+    <div class="row no-gutters" style="background: rgb(21,143,153); background: linear-gradient(22deg, rgb(44 62 139) 33%, rgb(76 37 141) 100%);
+}">
         <div class="col-6 offset-md-1 block">
             <div class="block-content">
                 <div class="block-content">
@@ -86,7 +103,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
         <div class="col-3 block">
             <div class="block-content"></div>
-            <h2 >What do we do?</h2>
+            <h2>What do we do?</h2>
         </div>
     </div>
     <div class="row no-gutters" style="background: rgb(160 45 77);">

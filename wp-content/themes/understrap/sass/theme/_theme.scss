@@ -4,6 +4,10 @@ $green: #27f693;
 $blue: #158f99;
 $black: #1c1c1c;
 
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
 .btn {
   &.btn-primary {
     background: transparent;
@@ -86,8 +90,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
-    //border-top: 5px solid white;
+    z-index: 4;
     border-bottom: 1px solid transparent;
     transition: .3s all ease;
 
@@ -273,21 +276,22 @@ body {
       box-shadow: 0px 0px 50px -25px #000000a6;
 
       .highlights-block {
-        display: flex;
         padding: 5em 0;
 
         .card {
-          background: transparent;
+          background: white;
           border: 2px solid white;
           border-radius: 10px;
           //padding: 50px 10px;
           margin: 15px;
+          box-shadow: 0px 0px 50px -17px #151515d4;
+          display: inline-block;
 
           .card-body {
             display: flex;
             align-items: flex-end;
             justify-content: left;
-            color: #fff;
+            color: #000;
             padding-top: 12em;
 
             .card-title {
@@ -317,10 +321,46 @@ body {
           border-bottom: 2px solid #fff;
           display: inline;
         }
+
+        .graphic-content {
+          h2 {
+            position: absolute;
+            z-index: 3;
+            border: 5px solid white;
+            line-height: 1.5em;
+            padding: 40px;
+            border-radius: 28px;
+            font-size: 1.5em;
+            margin-left: -60px;
+          }
+          img {
+            &.graphic {
+              position: absolute;
+              border-radius: 20px;
+              box-shadow: 0px 0px 60px -25px black;
+              margin-top: -25vh;
+              margin-left: -25%;
+
+              &.fore {
+                width: 425px;
+                z-index: 1;
+                filter: blur(14px);
+                opacity: 0.5;
+              }
+              &.back {
+                width: 425px;
+                z-index: 0;
+              }
+            }
+          }
+        }
+
+
       }
 
       h2 {
-        font-size: 2.25em;
+        font-size: 2em;
+        z-index: 1;
       }
 
       h3 {
@@ -333,8 +373,51 @@ body {
 
       h4 {
         font-size: 20px;
-        width: 50%;
+        width: 60%;
         line-height: 36px;
+        font-weight: lighter;
+      }
+
+      h5 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 25px;
+      }
+
+      &.light {
+        color: $black;
+
+        .btn {
+          border-color: $black;
+          color: $black;
+          margin: 15px;
+
+          &.cta {
+            font-size: 0.75em;
+            border-radius: 35px;
+          }
+
+          &:hover {
+            background: $black;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .row {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: -50px;
+      border-radius: 25px;
+      box-shadow: 0px 0px 50px -25px rgba(0,0,0,0.75);
+
+      .overlay {
+        width: 100%;
       }
     }
   }
@@ -453,7 +536,7 @@ body {
         }
 
         .text-block-full {
-          background: rgb(21,153,97);
+          background: rgb(21, 153, 97);
           background: linear-gradient(138deg, rgba(21,153,97,1) 0%, rgba(21,129,153,1) 100%);
           margin: 3em auto;
           display: flex;
