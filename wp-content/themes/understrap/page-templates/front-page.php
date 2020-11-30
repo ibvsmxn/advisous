@@ -53,7 +53,10 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
-    <div class="row no-gutters" style="background: #dedede;">
+    <div class="row no-gutters"
+         style="background: url(https://images.unsplash.com/photo-1561015476-2f4fd3506fab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=999&q=80);
+                background-size: cover;
+                background-attachment: fixed;">
         <div class="col-12 block light text-center">
             <div class="block-content">
                 <h2 class="align-center">You are...</h2>
@@ -61,41 +64,67 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <a class="btn btn-primary cta" href="#">an employer</a>
                 <a class="btn btn-primary cta" href="#">an employee</a>
             </div>
-
         </div>
     </div>
-    <div class="row no-gutters" style="background: #1b1b1b;">
-        <div class="container highlights-block">
-            <div class="row">
-                <div class="card col-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Culture</h5>
-                    </div>
-                </div>
-                <div class="card col-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">HR</h5>
-                    </div>
-                </div>
-                <div class="card col-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Talent</h5>
-                    </div>
-                </div>
-                <div class="card col-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Management Development</h5>
-                    </div>
+    <div class="row no-gutters"
+         style="background: linear-gradient(22deg, #009688 33%, rgb(112 144 113) 100%);
+">
+        <div class="col-sm-6 block">
+            <div class="d-block block-text">
+                <h2>For employers</h2>
+                <p>We provide CIPD qualified independent bespoke services to employers, enabling your company to maximise your business resources, minimise cost and reduce risk whilst understanding your culture, protecting your brand and reputation.</p>
+                <ul>
+                    <li><a>Restructure</a></li>
+                    <li><a>Dismissal</a></li>
+                    <li><a>Grievance</a></li>
+                    <li><a>Welfare & Wellbeing</a></li>
+                </ul>
+            </div>
+           </div>
+        <div class="col-sm-6 block">
+            <div class="block-content">
+                <div class="graphic-content">
+                    <img class="graphic back" src="wp-content/themes/understrap/images/simone-hutsch-hGBqfjv7eQ4-unsplash.jpg">
                 </div>
             </div>
         </div>
     </div>
+    <div class="row no-gutters"
+         style="    background: linear-gradient(22deg, #24668e 33%, rgb(91 67 189) 100%);
+">
+        <div class="col-sm-6 block">
+            <div class="block-content">
+                <div class="graphic-content">
+                    <img class="graphic back" src="wp-content/themes/understrap/images/simone-hutsch-0aFrSMJ3i-g-unsplash.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 block">
+            <div class="d-block block-text">
+                <h2>For employees</h2>
+                <p>Impartial employee advise on work related issues or grievances. Working on your behalf to ensure your issue is dealt with in a fair, timely and cost-effective way, more information in the employee advise section.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row no-gutters"
+         style="background: #e3d6ce;
+                background-size: cover;
+                background-attachment: fixed;
+">
+        <div class="col-12 block light text-center">
+            <div class="block-content">
+                <h2 class="align-center">For Employees</h2>
+            </div>
+        </div>
+    </div>
+
     <div class="row no-gutters" style="background: rgb(21,143,153); background: linear-gradient(22deg, rgb(44 62 139) 33%, rgb(76 37 141) 100%);
 }">
         <div class="col-6 offset-md-1 block">
             <div class="block-content">
                 <div class="block-content">
-                    <h3>We provide HR consultants to your organisation that <u>delivers solid results</u>.</h3>
+                    <h3>We provide HR consultants to your organisation that <u>deliver solid results</u>.</h3>
                     <h4>Leaving you free to focus on your endless array of Zoom meetings.</h4>
                     <a href="#" class="cta btn btn-primary">Read more</a>
                 </div>
@@ -110,7 +139,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="col-12 block">
             <div class="block-content">
                 <div class="block-content">
-                    <h3>We provide HR consultants to your organisation that <u>delivers solid results</u>.</h3>
+                    <h3>We provide HR consultants to your organisation that <u>deliver solid results</u>.</h3>
                     <h4>Leaving you free to focus on your endless array of Zoom meetings.</h4>
                     <a href="#" class="cta btn btn-primary">Read more</a>
                 </div>
@@ -121,7 +150,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="col-12 block">
             <div class="block-content">
                 <div class="block-content">
-                    <h3>We provide HR consultants to your organisation that <u>delivers solid results</u>.</h3>
+                    <h3>We provide HR consultants to your organisation that <u>deliver solid results</u>.</h3>
                     <h4>Leaving you free to focus on your endless array of Zoom meetings.</h4>
                     <a href="#" class="cta btn btn-primary">Read more</a>
                 </div>
