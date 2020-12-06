@@ -41,7 +41,7 @@ defined( 'ABSPATH' ) || exit;
 
     <div class="wrapper">
 
-	<div class="entry-content col-12">
+	<div class="entry-content">
 
 		<?php the_content(); ?>
 

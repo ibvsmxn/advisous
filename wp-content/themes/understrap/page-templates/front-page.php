@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </section>
 
 <section class="blocks">
-    <div class="row no-gutters" style="background: rgb(21,143,153); background: linear-gradient(22deg, rgb(44 62 139) 33%, rgb(76 37 141) 100%);">
+    <div class="row block-row no-gutters" style="background: rgb(21,143,153); background: linear-gradient(22deg, rgb(44 62 139) 33%, rgb(76 37 141) 100%);">
         <div class="col-6 block">
             <div class="block-content">
                 <div class="graphic-content">
@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
-    <div class="row no-gutters"
+    <div class="row block-row no-gutters"
          style="background: url(https://images.unsplash.com/photo-1561015476-2f4fd3506fab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=999&q=80);
                 background-size: cover;
                 background-attachment: fixed;">
@@ -66,7 +66,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
-    <div class="row no-gutters"
+    <div class="row block-row no-gutters"
          style="background: linear-gradient(22deg, #009688 33%, rgb(112 144 113) 100%);
 ">
         <div class="col-sm-6 block">
@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
-    <div class="row no-gutters"
+    <div class="row block-row no-gutters"
          style="    background: linear-gradient(22deg, #24668e 33%, rgb(91 67 189) 100%);
 ">
         <div class="col-sm-6 block">
@@ -107,19 +107,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
 
     </div>
-    <div class="row no-gutters"
-         style="background: #e3d6ce;
-                background-size: cover;
-                background-attachment: fixed;
-">
-        <div class="col-12 block light text-center">
-            <div class="block-content">
-                <h2 class="align-center">For Employees</h2>
-            </div>
-        </div>
-    </div>
 
-    <div class="row no-gutters" style="background: rgb(21,143,153); background: linear-gradient(22deg, rgb(44 62 139) 33%, rgb(76 37 141) 100%);
+    <div class="row no-gutters d-none" style="background: rgb(21,143,153); background: linear-gradient(22deg, rgb(44 62 139) 33%, rgb(76 37 141) 100%);
 }">
         <div class="col-6 offset-md-1 block">
             <div class="block-content">
@@ -135,7 +124,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <h2>What do we do?</h2>
         </div>
     </div>
-    <div class="row no-gutters" style="background: rgb(160 45 77);">
+    <div class="row no-gutters d-none" style="background: rgb(160 45 77);">
         <div class="col-12 block">
             <div class="block-content">
                 <div class="block-content">
@@ -146,7 +135,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
-    <div class="row no-gutters" style="background: url('wp-content/themes/understrap/images/kid-circus-HyVXOAxah10-unsplash.jpg');background-position: 0 15%; background-size: 185%; background-attachment: fixed">
+    <div class="row no-gutters d-none" style="background: url('wp-content/themes/understrap/images/kid-circus-HyVXOAxah10-unsplash.jpg');background-position: 0 15%; background-size: 185%; background-attachment: fixed">
         <div class="col-12 block">
             <div class="block-content">
                 <div class="block-content">
@@ -160,7 +149,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </section>
 
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div class="wrapper d-none" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 

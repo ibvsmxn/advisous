@@ -368,8 +368,8 @@ body {
           font-family: Montserrat, sans-serif;
           font-weight: normal;
           color: white;
-          font-size: 0.75em;
-          line-height: 1.75em;
+          font-size: 22px;
+          line-height: 40px;
         }
 
         ul {
@@ -461,7 +461,7 @@ body {
       }
     }
 
-    .row {
+    .row.block-row {
       height: 100vh;
       display: flex;
       align-items: center;
@@ -493,8 +493,49 @@ body {
           background: #0e0e0e;
 
           .wp-block-coblocks-column__inner {
-            //padding: 60px;
+            padding: 60px;
           }
+        }
+      }
+
+      .wp-block-group,
+      .wp-block-columns {
+        min-height: 750px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-top: -25px;
+        padding: 100px 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        .wp-block-column {
+          padding: 50px;
+          margin: 0;
+        }
+
+        h2 {
+          font-size: 3.5em;
+          color: white;
+        }
+
+        p {
+          font-family: Montserrat, sans-serif;
+          font-size: 1.5em;
+          line-height: 2em;
+        }
+
+        img {
+          border-radius: 20px;
+        }
+      }
+
+      .wp-block-group {
+        padding: 100px;
+
+        p {
+          width: 66.66%;
+          margin: 0 auto;
         }
       }
     }
@@ -666,9 +707,10 @@ body {
   }
 
   #wrapper-footer {
-    background: transparent;
+    background: $black;
     border-top: 1px solid rgba(255,255,255,0.125);
     color: white;
+    margin-top: -20px;
 
     img {
       max-width: 200px;
