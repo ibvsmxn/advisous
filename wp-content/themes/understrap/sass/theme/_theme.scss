@@ -481,8 +481,10 @@ body {
   &.page-template-content-page {
     background: $black;
 
+    .wrapper,
     #full-width-page-wrapper {
       padding: 0;
+      border-radius: 20px;
 
       .wp-block-coblocks-column {
         margin: 0;
@@ -503,20 +505,29 @@ body {
         min-height: 750px;
         display: flex;
         align-items: center;
-        margin: 0;
-        margin-top: -25px;
         padding: 100px 0;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-radius: 20px;
+        width: 95%;
+        margin: 40px auto;
+        box-shadow: 0px 0px 100px -50px black;
+
+        &.no-shadow {
+          box-shadow: none;
+        }
 
         .wp-block-column {
           padding: 50px;
           margin: 0;
+
+          &.white {
+            h2, p {
+              color: $black;
+            }
+          }
         }
 
         h2 {
           font-size: 3.5em;
-          color: white;
         }
 
         p {
@@ -605,7 +616,7 @@ body {
     }
 
     article {
-      background: $black;
+      background: white;
 
       .entry-content {
         line-height: 1.75em;
